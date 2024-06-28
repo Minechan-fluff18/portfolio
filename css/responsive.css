@@ -1,0 +1,93 @@
+/* Responsive */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .container {
+    align-items: center;
+    margin: 55px;
+  }
+  .intro {
+    width: auto;
+    font-size: 45px;
+  }
+  .footer a {
+    width: 86px;
+    height: 86px;
+  }
+  .footer img {
+    width: 70px;
+  }
+  .menu {
+    width: 84px;
+  }
+  .menu-link {
+    width: 84px;
+    height: 84px;
+  }
+  .menu-link img {
+    width: 84px;
+  }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+  .container {
+    margin: 10%;
+  }
+  .hero-text:hover img{
+    display: none;
+  }
+  .intro {
+    font-size: 35px;
+  }
+  .footer a {
+    width: 74px;
+    height: 74px;
+  }
+  .footer img {
+    width: 64px;
+    opacity: 1;
+    right: 0;
+    z-index: 0;
+  }
+  .menu {
+    position: absolute;
+    width: 74px;
+    left: 10%;
+    top: 25%;
+    gap: 30px;
+  }
+  .line {
+    display: none;
+  }
+  .menu-link {
+    justify-content: flex-start;
+    width: 74px;
+    height: 74px;
+  }
+  .menu-link img {
+    width: 74px;
+  }
+  .planet,
+  .plant,
+  .bread {
+    display: none;
+  }
+  .planet_clr,
+  .plant_clr,
+  .bread_clr {
+    opacity: 1;
+  }
+  .menu-link p {
+    opacity: 1;
+    left: 140px;
+  }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+}

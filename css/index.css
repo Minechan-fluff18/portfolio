@@ -158,7 +158,6 @@ p {
 .menu-link img {
   position: absolute;
   width: 94px;
-  right: 70px;
 }
 
 .planet,
@@ -198,9 +197,9 @@ p {
 .plant_text,
 .bread_text {
   position: relative;
-  right: -100px;
+  right: -50px;
   opacity: 0;
-  z-index: 2;
+  z-index: -1;
   text-shadow: #fff 0 0 15px, #fff 0 0 15px;
   transition: opacity 800ms ease-in-out, right 800ms ease-in-out;
 }
@@ -210,4 +209,5 @@ p {
 .menu-link:hover .bread_text {
   opacity: 1;
   right: 150px;
+  z-index: 2;
 }
