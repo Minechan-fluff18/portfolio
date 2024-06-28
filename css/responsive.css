@@ -59,7 +59,8 @@
   }
   .menu {
     position: absolute;
-    width: 74px;
+    align-items: flex-start;
+    width: 100%;
     left: 10%;
     top: 25%;
     gap: 30px;
@@ -69,7 +70,7 @@
   }
   .menu-link {
     justify-content: flex-start;
-    width: 74px;
+    width: 55%;
     height: 74px;
   }
   .menu-link img {
@@ -87,7 +88,7 @@
   }
   .menu-link p {
     opacity: 1;
-    left: 140px;
+    left: 120px;
   }
 }
 
