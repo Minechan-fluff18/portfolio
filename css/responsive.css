@@ -36,7 +36,7 @@
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
   p {
-    font-size: 15px;
+    font-size: 18px;
   }
   .container {
     margin: 10%;
@@ -70,7 +70,7 @@
   }
   .menu-link {
     justify-content: flex-start;
-    width: 55%;
+    width: 58%;
     height: 74px;
   }
   .menu-link img {
