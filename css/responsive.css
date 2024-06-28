@@ -36,7 +36,7 @@
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
   p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .container {
     margin: 10%;
