@@ -11,7 +11,6 @@
     margin: 55px;
   }
   .intro {
-    width: auto;
     font-size: 45px;
   }
   .footer a {
@@ -40,6 +39,9 @@
   }
   .container {
     margin: 10%;
+  }
+  .hero-text-max {
+    gap: 15px;
   }
   .hero-text:hover img{
     display: none;
@@ -88,10 +90,16 @@
   }
   .menu-link p {
     opacity: 1;
-    left: 120px;
+    left: 50%;
   }
 }
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
+  .simbol {
+    height: 80%;
+  }
+  .intro {
+    font-size: 20px;
+  }
 }
