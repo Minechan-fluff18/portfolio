@@ -1,6 +1,7 @@
 body {
   background-color: aqua;
   background: url(../img/bg_blue.png) no-repeat center center fixed;
+  background-size: cover;
 }
 
 #col3 {

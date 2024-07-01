@@ -12,13 +12,32 @@ b {
   font-weight: 700;
 }
 
-.wrapper {
-  gap: 120px;
+#col2 {
+  --columns: 2;
+  --column-gutter: 100px;
+  --row-gutter: 50px;
 }
 
-section {
-  display: grid;
-  gap: 50px;
+#col1 {
+  --columns: 1;
+  --row-gutter: 50px;
+}
+
+.bio_block {
+  display: flex;
+  grid-column-gap: var(--column-gutter);
+  align-items: start;
+}
+
+.bio_block_column {
+  display: flex;
+  row-gap: var(--row-gutter);
+  width: fit-content;
+  flex-direction: column;
+}
+
+.wrapper {
+  gap: 120px;
 }
 
 h2.intro {
