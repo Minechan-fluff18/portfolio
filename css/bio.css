@@ -1,0 +1,36 @@
+@font-face{
+  font-family: 'Fairfax';
+  src: url('../font/Fairfax.ttf');
+  src: url('../font/Fairfax.ttf') format('truetype')
+  url('../font/FairfaxBold.ttf') format('truetype')
+  url('../font/FairfaxItalic.ttf') format('truetype');
+  font-weight: 200;
+}
+
+b {
+  font-family: 'Fairfax';
+  font-weight: 700;
+}
+
+.wrapper {
+  gap: 120px;
+}
+
+section {
+  display: grid;
+  gap: 50px;
+}
+
+h2.intro {
+  font-size: 30px;
+}
+
+.bio_text, ul, li {
+  font-family: 'Fairfax';
+  font-size: 30px;
+  margin: 0;
+}
+
+.bio_text {
+  margin-top: 30px;
+}

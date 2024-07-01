@@ -43,6 +43,9 @@
   .hero-text-max {
     gap: 15px;
   }
+  .arrow {
+    width: 15px;
+  }
   .hero-text:hover img{
     display: none;
   }

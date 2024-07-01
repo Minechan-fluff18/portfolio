@@ -31,10 +31,6 @@ body {
   gap: 120px;
 }
 
-.arrow {
-  width: 20px;
-}
-
 .photo_grid {
   display: grid;
   grid-column-gap: var(--column-gutter);
