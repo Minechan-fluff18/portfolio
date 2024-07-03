@@ -2,9 +2,6 @@
 
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
-  #col1 {
-    display: none;
-  }
 }
 
 /* Medium: 768px - 991px */

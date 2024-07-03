@@ -1,0 +1,63 @@
+body {
+  background: url(../img/bg_purple.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#col2 {
+  --columns: 2;
+  --column-gutter: 100px;
+  --row-gutter: 50px;
+}
+
+#col1 {
+  display: none;
+  --columns: 1;
+  --row-gutter: 50px;
+}
+
+.container {
+  padding-bottom: 70px;
+}
+
+.wrapper {
+  gap: 120px;
+}
+
+h2.intro {
+  font-size: 30px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.sites {
+  display: flex;
+  gap: 60%;
+  justify-content: center;
+}
+
+.site_photo {
+  flex: 0 0 50%;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.site_photo img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: all 0.8s ease;
+}
+
+.site_photo.hovered {
+  flex: 0 0 100%;
+}
+
+.site_photo.not-hovered {
+  flex: 0 0 0;
+}

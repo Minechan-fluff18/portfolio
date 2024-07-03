@@ -19,6 +19,7 @@ b {
 }
 
 #col1 {
+  display: none;
   --columns: 1;
   --row-gutter: 50px;
 }
