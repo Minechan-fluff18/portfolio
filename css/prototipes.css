@@ -1,0 +1,24 @@
+body {
+  background-color: aquamarine;
+  background: url(../img/bg_green.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 100%;
+  gap: 120px;
+}
+
+.prototipes, .prot_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prot_img {
+  width: 65%;
+}
+
+.prototipes img {
+  width: 100%;
+}

@@ -1,9 +1,9 @@
-@font-face{
+@font-face {
   font-family: 'Fairfax';
-  src: url('../font/Fairfax.ttf');
-  src: url('../font/Fairfax.ttf') format('truetype')
-  url('../font/FairfaxBold.ttf') format('truetype')
-  url('../font/FairfaxItalic.ttf') format('truetype');
+  src: url('../fonts/Fairfax.ttf');
+  src: url('../fonts/Fairfax.ttf') format('truetype')
+  url('../fonts/FairfaxBold.ttf') format('truetype')
+  url('../fonts/FairfaxItalic.ttf') format('truetype');
   font-weight: 200;
 }
 

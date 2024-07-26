@@ -1,0 +1,50 @@
+/* Responsive */
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .site_photo {
+    width: 80%;
+  }
+  .img_site {
+    width: 100%;
+  }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+  .site_photo_left, .site_photo_right {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+  .site_photo {
+    width: 90%;
+  }
+  .img_site {
+    width: 100%;
+  }
+  .site_name {
+    justify-content: flex-start;
+  }
+  #arrow {
+    display: none;
+  }
+  #arrow_down {
+    display: block;
+    height: 20px;
+    width: auto;
+  }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+  .wrapper {
+    gap: 70px;
+  }
+  .site_photo_left, .site_photo_right {
+    align-items: start;
+  }
+  .site_photo {
+    width: 100%;
+  }
+}
