@@ -85,21 +85,32 @@ p {
   color: #000;
   width: min-content;
   margin: 0;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .photo {
-  opacity: 0;
+  opacity: 1;
   position: fixed;
-  width: 270px;
+  width: 260px;
+  top: 150px;
+  /*
   top: -110px;
   transition: opacity 800ms ease-in-out, top 800ms ease-in-out;
+  */
+  filter: grayscale(100%);
+  transition: filter 500ms ease-in-out;
 }
 
+.photo:hover {
+  filter: grayscale(0%);
+}
+
+/*
 .hero-text:hover .photo {
   opacity: 1;
-  top: 205px;
+  top: 150px;
 }
+*/
 
 .footer {
   display: flex;
@@ -114,46 +125,76 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
-.footer-mail {
+.footer-mail,
+.footer-tg,
+.footer-inst {
+  background: #acacac;
+  transition: all 500ms ease-in-out;
+}
+
+.footer-mail:hover {
   background: #FF73BF;
 }
 
-.footer-tg {
+.footer-tg:hover {
   background: #66B4ED;
 }
 
-.footer-inst {
+.footer-inst:hover {
   background: #FFC8A0;
 }
 
 .footer img {
-  opacity: 0;
-  position: relative;
-  width: 84px;
+  position: absolute;
+  width: 72px;
+  /*
   right: -90px;
   z-index: -1;
   transition: opacity 800ms ease-in-out, right 800ms ease-in-out;
 }
 
+/*
 .footer-mail:hover img,
 .footer-tg:hover img,
 .footer-inst:hover img {
   opacity: 1;
   right: 0;
   z-index: 0;
+*/
+}
+
+.mail,
+.tg,
+.inst {
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 500ms ease-in-out;
+}
+
+.mail_blk,
+.tg_blk,
+.inst_blk {
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.mail:hover,
+.tg:hover,
+.inst:hover {
+  opacity: 1;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 94px;
+  width: 80px;
   height: fit-content;
-  gap: 50px;
+  gap: 30px;
   margin: 0;
 }
 
@@ -173,7 +214,7 @@ p {
 
 .menu-link img {
   position: absolute;
-  width: 94px;
+  width: 80px;
 }
 
 .planet,
@@ -188,42 +229,50 @@ p {
   opacity: 0;
   z-index: 2;
   filter: drop-shadow(0 0 15px #fff) drop-shadow(0 0 15px #fff);
-  transition: opacity 800ms ease-in-out;
-}
-
-.menu-link:hover .planet_clr,
-.menu-link:hover .plant_clr,
-.menu-link:hover .bread_clr {
-  opacity: 1;
-}
-
-.planet_text {
-  color: #AF81E4;
-}
-
-.plant_text {
-  color: #9EEB94;
-}
-
-.bread_text { 
-  color: #7CC2F6;
+  transition: opacity 500ms ease-in-out;
 }
 
 .planet_text,
 .plant_text,
 .bread_text {
   position: relative;
-  right: -50px;
+  text-shadow: #fff 0 0 15px, #fff 0 0 15px;
+  right: 150px;
+  z-index: 2;
+  color: #000;
+  opacity: 0.3;
+  transition: all 500ms ease-in-out;
+}
+
+.menu-link:hover .planet_text {
+  color: #AF81E4;
+}
+
+.menu-link:hover .plant_text {
+  color: #9EEB94;
+}
+
+.menu-link:hover .bread_text { 
+  color: #7CC2F6;
+}
+
+.menu-link:hover .planet_clr,
+.menu-link:hover .plant_clr,
+.menu-link:hover .bread_clr,
+.menu-link:hover .planet_text,
+.menu-link:hover .plant_text,
+.menu-link:hover .bread_text {
+  opacity: 1;
+}
+
+/*
   opacity: 0;
   z-index: -1;
-  text-shadow: #fff 0 0 15px, #fff 0 0 15px;
+  right: -50px;
   transition: opacity 800ms ease-in-out, right 800ms ease-in-out;
 }
 
 .menu-link:hover .planet_text,
 .menu-link:hover .plant_text,
 .menu-link:hover .bread_text {
-  opacity: 1;
-  right: 150px;
-  z-index: 2;
-}
+*/
